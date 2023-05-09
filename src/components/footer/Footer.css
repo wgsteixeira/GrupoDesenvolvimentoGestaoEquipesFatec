@@ -1,0 +1,24 @@
+#footer{
+    background: #0d3a5c;
+    display: flex;
+    justify-content: center;
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+    position: relative;
+    z-index: 1;
+    bottom: 0;	   
+}
+.footer-wrapper {
+    width: 100%;
+    position: relative;
+}
+.footer-p{
+    color: #fff;
+    margin-top: 40px;
+}
+@media (min-width: 540px)
+{#footer{
+    position: fixed;
+}}
