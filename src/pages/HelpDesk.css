@@ -1,3 +1,76 @@
-h1{
+input {
+    width: 750px;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    text-align: center;
+    color: #c5c5c5;
+}
+
+h1 {
+    margin-top: 130px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 65px;
     font-family: Dm sans;
+}
+
+p {
+    margin: 0;
+    margin-left: -530px;
+    font-family: Dm sans;
+}
+
+img {
+    max-width: 12%;
+    float: left;
+}
+
+.helpdesk-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-container-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-container {
+    margin: 20px;
+    width: 740px;
+    padding: 15px;
+    background-color: #4984ae;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+}
+
+.text-div {
+    text-align: center;
+    color: white;
+}
+
+.sb-box-container {
+    max-width: 50%;
+    margin-left: 1%;
+    flex-direction: column;
+    align-items: left;
 }
