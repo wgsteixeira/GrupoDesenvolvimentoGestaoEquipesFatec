@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/footer/Footer';
+import HelpDesk from './pages/HelpDesk';
 
 function App() {
   return (
-    <div>
-      <Footer />
-    </div>
-  );
+    <Router>
+      <Link to="/">Home</Link>
+      <Link to="/helpdesk">HelpDesk</Link>
+      <Routes>
+        <Route path='/helpdesk' element={<HelpDesk/>}/>
+      </Routes>
+    </Router>
+    
+  )
 }
 
 export default App;
