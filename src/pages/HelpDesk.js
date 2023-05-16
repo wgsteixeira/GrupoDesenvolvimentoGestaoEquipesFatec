@@ -8,7 +8,7 @@ import desktop from '../img/desktop.png'
 function HelpDesk() {
     return (
         <div>
-            <div class="helpdesk-container">
+            <div id='helpdesk' class="helpdesk-container">
                 <div class="search-container">
                     <h1>Help desk</h1>
                     <p>Bem vindo a central de ajuda</p>
