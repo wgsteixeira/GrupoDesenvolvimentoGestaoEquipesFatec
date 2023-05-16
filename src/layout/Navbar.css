@@ -44,3 +44,10 @@
     background: linear-gradient(90deg, #895cfd, #5ce0e6);
     color: white;
 }
+
+img {
+    max-width: 45px;
+    float: left;
+    margin: 5px;
+    margin-left: 45px;
+}

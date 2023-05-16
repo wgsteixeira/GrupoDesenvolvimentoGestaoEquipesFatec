@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import logo from '../img/logo.png'
 
 const Navbar = () =>{
     return (
@@ -9,7 +10,7 @@ const Navbar = () =>{
                 <a href="#portifolio">Portfólio</a>
                 <a href="#helpdesk">Help Desk</a>
             </nav>
-            <a href="/#">Logo</a>
+            <img src={logo} />
             <div class="right-nav">
                 <button>Login</button>
             </div>
