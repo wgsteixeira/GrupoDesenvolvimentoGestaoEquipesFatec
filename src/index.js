@@ -8,11 +8,13 @@ import { sendToVercelAnalytics } from './vitals';
 import Navbar from './layout/Navbar';
 import HelpDesk from './pages/HelpDesk';
 import Portfolio from './pages/Portfolio';
+import Home from './pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <App />
+    <Home />
     <Portfolio />
     <HelpDesk />
     <Footer />
