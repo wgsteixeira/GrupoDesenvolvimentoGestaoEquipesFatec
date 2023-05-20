@@ -1,32 +1,31 @@
 import './Home.css';
 import logo_brand from '../img/logo_brand.png'
+import map from '../img/map.png'
 
 function Home() {
     return (
-        <main>
-            <aside>
+        <div className='container'>
+            <div className='aside'>
                 <div class="hexagono">
-                    <img src="../img/home.png" alt="imagem">
+                    <img className='logo_brand' src={logo_brand} alt="imagem"/>
                 </div>
-                <h1>"ACCURATE AND FAST"</h1>
-                <p>TOTAL EXPRESS</p>
-            </aside>
-        
-            <article>
+                <div className='slogan'>"ACCURATE AND FAST"</div>
+                <div className='name'>TOTAL EXPRESS</div>
+            </div>
+                    
+            <div>
                 <div class="mapa">
-                    <img src="../img/mapa.png" alt="imagem do canto">
+                    <img className='map_img' src={map} alt="imagem do canto"/>
                 </div>
                 <h2>TOTAL EXPRESS</h2>
                 <h3>QUEM SOMOS?</h3>
-                <p class="p1">
-                       A EMPRESA TOTAL EXPRESS NASCEU EM PRESIDENTE <br> PRUDENTE - SP EM 2019. BUSCAMOS SEMPRE PENSAR A <br> FRENTE, OFERECENDO INOVAÇÃO NO CENÁRIO <br> LOGÍSTICO, 
-                    PROPORCIONANDO ATENDIDO E QUALIDADE <br> EM TODAS NOSSAS OPERAÇÕES, TEMOS COMO NOSSA <br> MISSÃO, ENTREGAR O MELHOR NO QUE DIZ RESPEITO A<br> 
-                    ARMAZENAMENTO E CONTROLE LOGÍSTICO, NO MENOR <br> PRAZO E COM O MENOR CUSTO POSSÍVEL, GARANTINDO <br> ASSIM EXCELÊNCIA DAS NOSSAS OPERAÇÕES. 
-                </p>
-            </article>
-        </main>
-
-
+                <div className='text'>
+                    A EMPRESA TOTAL EXPRESS NASCEU EM PRESIDENTE PRUDENTE - SP EM 2019. BUSCAMOS SEMPRE PENSAR A FRENTE, OFERECENDO INOVAÇÃO NO CENÁRIO LOGÍSTICO,
+                    PROPORCIONANDO ATENDIDO E QUALIDADE EM TODAS NOSSAS OPERAÇÕES, TEMOS COMO NOSSA MISSÃO, ENTREGAR O MELHOR NO QUE DIZ RESPEITO A
+                    ARMAZENAMENTO E CONTROLE LOGÍSTICO, NO MENOR  PRAZO E COM O MENOR CUSTO POSSÍVEL, GARANTINDO ASSIM EXCELÊNCIA DAS NOSSAS OPERAÇÕES. 
+                </div>
+            </div>
+        </div>
     )
 }
 
