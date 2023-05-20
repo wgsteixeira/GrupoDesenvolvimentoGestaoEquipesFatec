@@ -6,7 +6,7 @@ function Home() {
         <main>
             <aside>
                 <div class="hexagono">
-                    <img src="img/home.png" alt="imagem">
+                    <img src="../img/home.png" alt="imagem">
                 </div>
                 <h1>"ACCURATE AND FAST"</h1>
                 <p>TOTAL EXPRESS</p>
@@ -14,7 +14,7 @@ function Home() {
         
             <article>
                 <div class="mapa">
-                    <img src="img/mapa.png" alt="imagem do canto">
+                    <img src="../img/mapa.png" alt="imagem do canto">
                 </div>
                 <h2>TOTAL EXPRESS</h2>
                 <h3>QUEM SOMOS?</h3>
