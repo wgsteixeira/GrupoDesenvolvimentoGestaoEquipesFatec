@@ -3,33 +3,28 @@ import logo_brand from '../img/logo_brand.png'
 
 function Home() {
     return (
-        <div className='container'>
-            <div className='home-container-first'>
-                <div className='brand'>
-                    <img className='img-brand' src={logo_brand} />
-                    <div className='slogan-text'>
-                        <p>"ACCURATE AND FAST"</p>
-                        <p>TotalExpress</p>
-                    </div>
+        <main>
+            <aside>
+                <div class="hexagono">
+                    <img src="img/home.png" alt="imagem">
                 </div>
-            </div>
-
-            <div id='home' className='home-container-second'>
-                <div className='home-container-second-text'>
-                    <h1 className='title'>TOTAL EXPRESS</h1>
-                    <h2>QUEM SOMOS?</h2>
-                    <p>A EMPRESA TOTAL EXPRESS NASCEU EM PRESIDENTE
-                        PRUDENTE-SP EM 2019.BUSCAMOS SEMPRE PENSAR
-                        A FRENTE, OFERECENDO INOVAÇÃO NO CENÉRIO
-                        LOGÍSTICO, PROPORCIONANDO ATENDIDO E QUALIDADE
-                        EM TODAS NOSSAS OPERAÇÕES, TEMOS COMO NOSSA
-                        MISSÃO, ENTREGAR O MELHOR NO QUE DIZ RESPEITO A
-                        ARMAZENAMENTO E CONTROLE LOGÍSTICO, NO MENOR
-                        PRAZO E COM O MENOR CUSTO POSSÍVEL, GARANTINDO
-                        ASSIM EXCELÊNCIA DAS NOSSAS OPERAÇÕES.</p>
+                <h1>"ACCURATE AND FAST"</h1>
+                <p>TOTAL EXPRESS</p>
+            </aside>
+        
+            <article>
+                <div class="mapa">
+                    <img src="img/mapa.png" alt="imagem do canto">
                 </div>
-            </div>
-        </div>
+                <h2>TOTAL EXPRESS</h2>
+                <h3>QUEM SOMOS?</h3>
+                <p class="p1">
+                       A EMPRESA TOTAL EXPRESS NASCEU EM PRESIDENTE <br> PRUDENTE - SP EM 2019. BUSCAMOS SEMPRE PENSAR A <br> FRENTE, OFERECENDO INOVAÇÃO NO CENÁRIO <br> LOGÍSTICO, 
+                    PROPORCIONANDO ATENDIDO E QUALIDADE <br> EM TODAS NOSSAS OPERAÇÕES, TEMOS COMO NOSSA <br> MISSÃO, ENTREGAR O MELHOR NO QUE DIZ RESPEITO A<br> 
+                    ARMAZENAMENTO E CONTROLE LOGÍSTICO, NO MENOR <br> PRAZO E COM O MENOR CUSTO POSSÍVEL, GARANTINDO <br> ASSIM EXCELÊNCIA DAS NOSSAS OPERAÇÕES. 
+                </p>
+            </article>
+        </main>
 
 
     )
