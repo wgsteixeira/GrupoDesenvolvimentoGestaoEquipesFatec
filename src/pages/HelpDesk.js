@@ -3,6 +3,7 @@ import './HelpDesk.css'
 import baloon from '../img/baloon.png'
 import call_center from '../img/call_center.png'
 import desktop from '../img/desktop.png'
+import icon_loupe from '../img/icon_loupe.png'
 
 
 function HelpDesk() {
@@ -22,17 +23,20 @@ function HelpDesk() {
                 <div class="search-container">
                     <h1>Help desk</h1>
                     <p>Bem vindo a central de ajuda</p>
-                    <input placeholder="Encontrar ajuda e serviços"></input>
-                    <div class="box-container-container">
+                    <div className='search_box'>
+                        <input type="text" placeholder="Encontrar ajuda e serviços"/>                        
+                        <img src={icon_loupe} alt=''/>                        
+                    </div>
+                </div>
 
-                        <div class='box-container'>
-                            <img src={baloon} />
-                            <div className='text-div'>Forum de Duvidas</div>
-                        </div>
-                        <div class='box-container'>
-                            <img src={call_center} />
-                            <div className='text-div'>Suporte</div>
-                        </div>
+                <div class="box-container-container">
+                    <div class='box-container'>
+                        <img src={baloon} />
+                        <div className='text-div'>Forum de Duvidas</div>
+                    </div>
+                    <div class='box-container'>
+                        <img src={call_center} />
+                        <div className='text-div'>Suporte</div>
                     </div>
                 </div>
             </div>
