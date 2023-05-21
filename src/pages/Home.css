@@ -3,6 +3,7 @@
     flex-direction:row;    
     align-items: center;
     max-width: 100%;
+    height: 100vh;
 }
 
 .logo_brand {
