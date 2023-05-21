@@ -7,7 +7,17 @@ import desktop from '../img/desktop.png'
 
 function HelpDesk() {
     return (
-        <div>
+        <div className='container'>
+            <div class='sb-box-container'>
+                <img src={desktop} />
+                <div className='text_container'>
+                    <p className='title'>ENTRE EM CONTATO</p>
+                    <p>(04) 298 3985 2092</p>
+                    <p>+76 209 1092 4095</p>
+                    <p className='bold'>contato@totalexpress.com.br</p>
+                </div>
+            </div>
+
             <div id='helpdesk' class="helpdesk-container">
                 <div class="search-container">
                     <h1>Help desk</h1>
@@ -26,13 +36,7 @@ function HelpDesk() {
                     </div>
                 </div>
             </div>
-            <div class='sb-box-container'>
-                <img src={desktop} />
-                <h2>ENTRE EM CONTATO</h2>
-                <p>(04) 298 3985 2092</p>
-                <p>+76 209 1092 4095</p>
-                <p>contato@totalexpress.com.br</p>
-            </div>
+
         </div>
     )
 }
