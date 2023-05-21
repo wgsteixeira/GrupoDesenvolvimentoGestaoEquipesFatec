@@ -2,15 +2,16 @@ import React from 'react';
 import './Navbar.css';
 import logo from '../img/logo.png'
 
-const Navbar = () =>{
+
+const Navbar = () => {
     return (
         <header class="nav">
             <nav class="centered-nav">
                 <a href="#home">Home</a>
-                <a href="#portifolio">Portfólio</a>
+                <a href="#portfolio">Portfólio</a>
                 <a href="#helpdesk">Help Desk</a>
             </nav>
-            <img src={logo} />
+            <img className='logo' src={logo} alt="imagem" />
             <div class="right-nav">
                 <button>Login</button>
             </div>
