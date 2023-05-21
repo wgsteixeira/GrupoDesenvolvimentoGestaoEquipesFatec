@@ -1,12 +1,10 @@
 
 .footer {
-    background-color: #0d3a5c;
-    padding: 30px;
+    background-color: #0d3a5c;    
     display: flex;
-    flex-direction: column;
-    color: white;
-    bottom: 0;
-    width: 100%; 
+    flex-direction: column;   
+    width: 100%;
+    height: 100%
   }
   
   .row {
@@ -16,31 +14,32 @@
   
   .column {
     flex: 33.33%;
-    padding: 10px;
-    box-sizing: border-box;
-
   }
   
-  .column h3 {
-    margin-top: 0;
-    font-family: Montserrat Classic;
+  .title {
+    font-size: 20px;
+    color: white;  
+    margin-top: 15px;
+    margin-bottom: 20px;    
+    text-align: center;
   }
   
-  .column ul {
-    list-style: none;
-    margin: 0;
+  .list_itens {
+    color: white;  
+    list-style: none;    
     padding: 0;
+    text-align: center;
   }
   
-  .column ul li {
-    margin-bottom: 10px;   
-    font-family: Montserrat Ligth; 
+  .list_itens li {
+    margin-bottom: 10px;
+          
   }
   
-  a {
+  .list_itens a {
+    color: white;
     display: inline-block;
-    margin-right: 10px;
-    color: white;    
+    margin-right: 10px;      
     text-decoration: none;    
   }
   
