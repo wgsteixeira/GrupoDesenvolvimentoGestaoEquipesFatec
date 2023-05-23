@@ -5,16 +5,16 @@ import logo from '../img/logo.png'
 
 const Navbar = () => {
     return (
-        <header class="nav">
-            <nav class="centered-nav">
-                <a href="#home">Home</a>
-                <a href="#portfolio">Portfólio</a>
-                <a href="#helpdesk">Help Desk</a>
-            </nav>
-            <img className='logo' src={logo} alt="imagem" />
-            <div class="right-nav">
-                <button>Login</button>
+        <header class="navbar">
+            <div class="navbar-header">
+                <img class="logo-image" src={logo} alt="imagem" />
             </div>
+            <div class="navbar-menu">
+                <a class="item home-button" href="#home">Home</a>
+                <a class="item portfolio-button" href="#portfolio">Portfólio</a>
+                <a class="item helpdesk-button" href="#helpdesk">Help Desk</a>
+            </div>
+            <div class="navbar-direita"><button class="login-button">Login</button></div>
         </header>
     );
 }
