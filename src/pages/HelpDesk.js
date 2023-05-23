@@ -21,8 +21,8 @@ function HelpDesk() {
 
             <div id='helpdesk' class="helpdesk-container">
                 <div class="search-container">
-                    <h1>Help desk</h1>
-                    <p>Bem vindo a central de ajuda</p>
+                    <span className='title_component'>Help desk</span>
+                    <span className='text_component'>Bem vindo a central de ajuda</span>
                     <div className='search_box'>
                         <input type="text" placeholder="Encontrar ajuda e serviços"/>                        
                         <img src={icon_loupe} alt=''/>                        

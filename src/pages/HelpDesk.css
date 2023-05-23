@@ -1,21 +1,4 @@
-h1 {
-    margin-top: 130px;
-    margin-bottom: 10px;
-    color: #000000;
-    font-size: 65px;
-    font-family: Dm sans;
-}
 
-p {
-    margin: 0;
-    margin-left: -530px;
-    font-family: Dm sans;
-}
-
-img {
-    max-width: 12%;
-    float: left;
-}
 
 .container {
     display: flex;
@@ -82,20 +65,21 @@ img {
     width: 740px;
     height: 150px;
     padding: 15px;
-    background-color: #4984ae;
-    text-align: center;
+    background-color: #4984ae;    
     color: white;
     border-radius: 2px;
     cursor: pointer;
 }
 
 .box-container img{
+    display: flex;
+    max-width: 80px;
     align-items: center;
     margin-top: 20px;
 }
 
-.text-div {
-    margin-top: 4.5%;
+.text-div {    
+    margin-top: -45px;
     text-align: center;
     color: white;
 }
@@ -131,5 +115,15 @@ img {
     margin: 0;
     margin-left: 5px;
     text-align: left;
+}
 
+.title_component{
+    font-size: 50px;
+    font-family: Dm Sans;    
+    color: black;
+}
+
+.text_component{
+    margin: 10px 0px 18px 0px;
+    font-size: 16px;
 }
