@@ -7,7 +7,7 @@ function Portfolio() {
             <div className='carrossel'>
                 <div className='item'>
                     <div className='logo-document'>
-                        <img src={document} />
+                        <img src={document} alt=''/>
                     </div>
                     <span className='name'>Abertura de chamados</span>
                     <span className='description'>akjsdgvkiashgrdfouaesbfiuhwuioashrfoiaewharopifjh</span>
