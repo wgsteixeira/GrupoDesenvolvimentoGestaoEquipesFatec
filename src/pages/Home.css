@@ -2,57 +2,66 @@
     display: flex;
     flex-direction:row;    
     align-items: center;
-    max-width: 89%;
-    height: 90vh;
-    margin-left: 40px;
+    max-width: 100%;
+    height: 89vh;
+    margin-left: 100px;
 }
 
+
 .logo_brand {
-    max-width: 120%;     
+    max-width: 75%;    
 }
+
 
 .aside{
     display: flex;
     flex-direction: column;
-    padding: 110px;  
+    padding: 0px;  
 }
+
 
 .slogan {
     font-family: 'Montserrat Classic',sans-serif;
-    font-size: 19px;
-    font-weight: 600;
-    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 33px;
     line-height: 3;  
 }
 
-.name { 
-    font-size: 13px;
-    margin-left: 179px;
+
+.name {
+    font-size: 14px;
+    margin-left: 259px;
 }
 
+
 .map_img {
-    max-width: 32%;
-    float: right;  
+    max-width: 15%;
+    float: right;
+    margin-right: 45px;  
 }
+
 
 h2 {
     font-family: 'Norwester',sans-serif;
-    font-size: 80px;
+    font-size: 84px;
     font-weight: 600;
 }
+
 
 h3 {
     font-family: 'Montserrat Classic',sans-serif;
     font-size: 23px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 3;
 }
+
 
 .text{
     font-family: 'Montserrat Ligth',sans-serif;
     margin-left: 0;
-    font-size: 17px;
+    font-size: 19px;
     letter-spacing: 1px;
-    max-width: 700px;
+    max-width: 600px;
     text-align: justify;
 }
