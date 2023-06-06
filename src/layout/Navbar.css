@@ -3,40 +3,41 @@ html, body {
 }
 
 .navbar {
-    top: 0;   
-    width: 100%;   
+    width: 100%;
     height: 50px;
-    background-color: #0d3a5c;
-    font-size: 20px;   
-    list-style-type: none;
+    top: 0;
     position: fixed;
-    overflow: hidden;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    font-size: 20px;
+    background-color: #0d3a5c;
 }
 
 /* NAVBAR HEADER / LOGO*/
+.navbar-header {
+    width: 15%;
+}
 
-.navbar > .navbar-header > .logo-image {
+.logo-image {
     max-width: 40px;    
     margin: 5px;
     margin-left: 30px;
 }
 
-/* NAVBAR MENU*/
-.navbar > .navbar-menu{
-    display: inline-flex;
-    float: none;
-    flex-wrap: nowrap;
-    position: absolute;
+/* NAVBAR MENU */
+.navbar-menu {
     width: 75%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
     align-self: stretch;
+    flex-wrap: nowrap;
 }
 
-.navbar > .navbar-menu > .item{
+.item-nav {
     position: relative;
-    display: inline-block; 
     width: 100%;
     height: 50px;
     white-space: nowrap;
@@ -48,30 +49,33 @@ html, body {
     color: white;
 }
 
-.navbar > .navbar-menu > .home-button:hover{
+.home-button:hover {
     background: linear-gradient(90deg, #895cfd, #5ce0e6);
     color: white;
 }
-.navbar > .navbar-menu > .portfolio-button:hover{
+
+.portfolio-button:hover {
     background: linear-gradient(90deg, #5ce0e6, #014bac);
     color: white;
 }
-.navbar > .navbar-menu > .helpdesk-button:hover{
+
+.helpdesk-button:hover {
     background: linear-gradient(90deg,#014bac, #1970df);
     color: white;
 }
 
 
 /* NAVBAR LOGIN BUTTON*/
-.navbar > .navbar-direita{
-    display: inline-flex;
-    float:right;
+.navbar-direita{
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
     height: 100%;
     padding: 10px;
     padding-right: 20px;
 }
 
-.navbar > .navbar-direita > .login-button{    
+.login-button{    
     border: none;
     color: white;
     border-radius: 9px;
@@ -79,6 +83,3 @@ html, body {
     width: 100px;
     background: linear-gradient(90deg, #0a4cb0, #bd69e2);
 }
-
-
-
