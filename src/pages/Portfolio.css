@@ -1,46 +1,76 @@
-.container {
-    max-width: 75vw;
+.container_portfolio {
+    max-width: 37.5vw;
+    display: block;
+    margin-left: 32.5%;    
+    
 }
 
-.carrossel {
+.container_portfolio .carousel_portfolio {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+    max-width: 100%;
 }
 
-.item {
-    background-color: #4984ae;
+.container_portfolio .carousel_portfolio::-webkit-scrollbar {
+    display: flex;    
+}
+
+.container_portfolio .carousel_portfolio .item_portfolio {
     margin: 10px;
     padding: 10px;
-    width: 600px;
-    height: 350px;
-    border-radius: 16px;
+    width: 700px;
+    height: 450px;
+    flex: none;
+    background-color: #4984ae;
+    border-radius: 30px;
+
+}
+
+.container_portfolio .carousel_portfolio .item_portfolio .image_portfolio img {
+    width: 80px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.container_portfolio .carousel_portfolio .item_portfolio .info_portfolio {
+    height: 140px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+
 }
 
-.logo-document img {
-    max-width: 20%;
-    object-fit: cover;
-    justify-content: flex-start; 
-}
-
-.name {
+.container_portfolio .carousel_portfolio .item_portfolio .info_portfolio span {
     display: block;
-    text-align: left;
-    padding: 5px;
-    font-size: 2.2rem;
-    font-size: bold;
-    margin-bottom: 10px;
     color: white;
+    padding: 5px;
+    border-radius: 10px;
 }
 
-.description {
-    display: block;
-    text-align: left;
-    padding: 5px;
-    font-size: 1.2rem;
-    margin-top: 10px;
-    font-weight: 200;
-    color: white;
+.container_portfolio .carousel_portfolio .item_portfolio .name_portfolio {
+    font-size: 50px;
+
+}
+
+.container_portfolio .carousel_portfolio .item_portfolio .description {
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.container_portfolio .buttons_portfolio {
+    text-align: center;
+}
+
+.container_portfolio .buttons_portfolio button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container_portfolio .buttons_portfolio button:first-child img {
+    transform: rotate(180deg);
 }
