@@ -11,10 +11,10 @@ import Home from './pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className='content'><Navbar /></div>    
-    <div className='container'> <Home /></div>    
-    <div className='container'><Portfolio /></div>   
-    <div className='container'><HelpDesk /></div> 
+    <Navbar /> 
+    <Home />
+    <Portfolio />   
+    <HelpDesk />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

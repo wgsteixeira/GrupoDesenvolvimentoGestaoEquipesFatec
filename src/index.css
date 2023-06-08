@@ -70,12 +70,4 @@ code {
     monospace;
 }
 
-.content {    
-    margin-top: 50px;
-  }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-}
