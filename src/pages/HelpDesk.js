@@ -8,7 +8,7 @@ import icon_loupe from '../img/icon_loupe.png'
 
 function HelpDesk() {
     return (
-        <div className='container'>
+        <div className='container' id='helpdesk'>
             <div class='sb-box-container'>
                 <img src={desktop} />
                 <div className='text_container'>
@@ -19,7 +19,7 @@ function HelpDesk() {
                 </div>
             </div>
 
-            <div id='helpdesk' class="helpdesk-container">
+            <div class="helpdesk-container">
                 <div class="search-container">
                     <span className='title_component'>Help desk</span>
                     <span className='text_component'>Bem vindo a central de ajuda</span>

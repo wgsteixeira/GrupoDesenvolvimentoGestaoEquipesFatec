@@ -1,42 +1,44 @@
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 
 .navbar {
-    top: 0;   
-    width: 100%;   
+    width: 100%;
     height: 50px;
-    background-color: #0d3a5c;
-    font-size: 20px;   
-    list-style-type: none;
+    top: 0;
     position: fixed;
-    overflow: hidden;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    font-size: 20px;
+    background-color: #0d3a5c;
 }
 
 /* NAVBAR HEADER / LOGO*/
+.navbar-header {
+    width: 15%;
+}
 
-.navbar > .navbar-header > .logo-image {
-    max-width: 40px;    
+.logo-image {
+    max-width: 40px;
     margin: 5px;
     margin-left: 30px;
 }
 
-/* NAVBAR MENU*/
-.navbar > .navbar-menu{
-    display: inline-flex;
-    float: none;
-    flex-wrap: nowrap;
-    position: absolute;
+/* NAVBAR MENU */
+.navbar-menu {
     width: 75%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
     align-self: stretch;
+    flex-wrap: nowrap;
 }
 
-.navbar > .navbar-menu > .item{
+.item-nav {
     position: relative;
-    display: inline-block; 
     width: 100%;
     height: 50px;
     white-space: nowrap;
@@ -48,30 +50,33 @@ html, body {
     color: white;
 }
 
-.navbar > .navbar-menu > .home-button:hover{
+.home-button:hover {
     background: linear-gradient(90deg, #895cfd, #5ce0e6);
     color: white;
 }
-.navbar > .navbar-menu > .portfolio-button:hover{
+
+.portfolio-button:hover {
     background: linear-gradient(90deg, #5ce0e6, #014bac);
     color: white;
 }
-.navbar > .navbar-menu > .helpdesk-button:hover{
-    background: linear-gradient(90deg,#014bac, #1970df);
+
+.helpdesk-button:hover {
+    background: linear-gradient(90deg, #014bac, #1970df);
     color: white;
 }
 
 
 /* NAVBAR LOGIN BUTTON*/
-.navbar > .navbar-direita{
-    display: inline-flex;
-    float:right;
+.navbar-direita {
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
     height: 100%;
     padding: 10px;
     padding-right: 20px;
 }
 
-.navbar > .navbar-direita > .login-button{    
+.login-button {
     border: none;
     color: white;
     border-radius: 9px;
@@ -81,4 +86,89 @@ html, body {
 }
 
 
+/* modals*/
 
+
+.modal {
+    position: fixed;
+    width: 400px;
+    z-index: 1040;
+    top: 30%;
+    left: 30%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 1040;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-desc,
+.modal-header,
+.modal-footer {
+    padding: 12px;
+}
+
+.close-button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    border: none;
+    background-color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-footer {
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.secondary-button {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.primary-button {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.modal-example {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

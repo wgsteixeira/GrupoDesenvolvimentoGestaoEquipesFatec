@@ -1,9 +1,7 @@
-
-
 .container {
     display: flex;
     flex-direction: column;
-    margin-right: 5%;
+    align-items: center;   
 }
 
 .helpdesk-container {
@@ -16,7 +14,7 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    margin-bottom: 4.8%;
+    margin-bottom: 2.9%;
 }
 
 .search-container {
@@ -25,13 +23,9 @@
     align-items: center;
 }
 
-.search-container p {
-    margin-bottom: 10px;
-}
-
 .search_box{
     background-color: white;    
-    width: 750px;
+    width: 1100px;
     height: 35px;
     border-radius: 40px;
     padding: 10px;
@@ -44,7 +38,7 @@
     border: 0;
     outline: 0;
     font-size: 16px;
-    width: 750px;
+    width: 1100px;
     height: 20px;
 }
 .search_box img{
@@ -62,8 +56,8 @@
 
 .box-container {
     margin: 20px;
-    width: 740px;
-    height: 150px;
+    width: 1100px;
+    height: 180px;
     padding: 15px;
     background-color: #4984ae;    
     color: white;
@@ -84,16 +78,12 @@
     color: white;
 }
 
-.sb-box-container {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-top: 70%;
+.sb-box-container {    
+    margin-top: 40%;
 }
 
-.sb-box-container img {
-    margin: 10px;
-    max-width: 50%;
+.sb-box-container img {   
+    max-width: 80%;
 }
 
 .text_container {
@@ -118,12 +108,12 @@
 }
 
 .title_component{
-    font-size: 50px;
+    font-size: 90px;
     font-family: Dm Sans;    
     color: black;
 }
 
 .text_component{
-    margin: 10px 0px 18px 0px;
+    margin: 5px 890px 8px 0px;
     font-size: 16px;
 }
