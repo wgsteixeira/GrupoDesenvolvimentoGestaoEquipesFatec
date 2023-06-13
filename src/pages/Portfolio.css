@@ -71,7 +71,3 @@
     border: none;
     cursor: pointer;
 }
-
-.container_portfolio .buttons_portfolio button:first-child img {
-    transform: rotate(180deg);
-}

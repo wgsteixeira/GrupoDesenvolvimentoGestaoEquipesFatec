@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import './Portfolio.css'
-import arrow from '../img/arrow.png'
+import arrow_right from '../img/arrow_right.png'
+import arrow_left from '../img/arrow_left.png'
 import document from '../img/document.png'
 import heart from '../img/heart.png'
 import woman from '../img/woman.png'
@@ -116,8 +117,8 @@ function Portfolio() {
 
             </div>
             <div className='buttons_portfolio'>
-                <button onClick={hadleLeftClick}><img src={arrow} alt='Scroll Left' /></button>
-                <button onClick={hadleRightClick}><img src={arrow} alt='Scroll Right' /></button>
+                <button onClick={hadleLeftClick}><img src={arrow_left} alt='Scroll Left' /></button>
+                <button onClick={hadleRightClick}><img src={arrow_right} alt='Scroll Right' /></button>
             </div>
         </div>
     )
