@@ -1,13 +1,14 @@
 .container_portfolio {
-    max-width: 37.5vw;
+    max-width: 720px;
     display: block;
-    margin-left: 32.5%;    
+    margin-left: 25%;
     
 }
 
 .container_portfolio .carousel_portfolio {
     display: flex;
     overflow-x: auto;
+    align-items: center;
     scroll-behavior: smooth;
     max-width: 100%;
 }
@@ -50,7 +51,7 @@
 }
 
 .container_portfolio .carousel_portfolio .item_portfolio .name_portfolio {
-    font-size: 50px;
+    font-size: 45px;
 
 }
 
