@@ -24,7 +24,7 @@ const Navbar = () => {
             </div>
             <div class=" navbar-menu">
                 <a class="item-nav home-button" href="#home">Home</a>
-                <a class="item-nav portfolio-button" href="#portfolio">Portfólio</a>
+                <a class="item-nav catalogo-button" href="#catalogo">Catálogo de Serviços</a>
                 <a class="item-nav helpdesk-button" href="#helpdesk">Help Desk</a>
             </div>
             <div class=" navbar-direita"><button id="login-button" class="login-button" onClick={() => setShowModal(true)}>Login</button></div>

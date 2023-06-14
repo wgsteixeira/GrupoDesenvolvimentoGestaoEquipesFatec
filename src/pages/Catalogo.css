@@ -1,11 +1,11 @@
-.container_portfolio {
+.container_catalogo {
     max-width: 720px;
     display: block;
     margin-left: 25%;
     
 }
 
-.container_portfolio .carousel_portfolio {
+.container_catalogo .carousel_catalogo {
     display: flex;
     overflow-x: auto;
     align-items: center;
@@ -13,11 +13,11 @@
     max-width: 100%;
 }
 
-.container_portfolio .carousel_portfolio::-webkit-scrollbar {
+.container_catalogo .carousel_catalogo::-webkit-scrollbar {
     display: flex;    
 }
 
-.container_portfolio .carousel_portfolio .item_portfolio {
+.container_catalogo .carousel_catalogo .item_catalogo {
     margin: 10px;
     padding: 10px;
     width: 700px;
@@ -28,13 +28,13 @@
 
 }
 
-.container_portfolio .carousel_portfolio .item_portfolio .image_portfolio img {
+.container_catalogo .carousel_catalogo .item_catalogo .image_catalogo img {
     width: 80px;
     object-fit: cover;
     margin: 20px;
 }
 
-.container_portfolio .carousel_portfolio .item_portfolio .info_portfolio {
+.container_catalogo .carousel_catalogo .item_catalogo .info_catalogo {
     height: 140px;
     display: flex;
     flex-direction: column;
@@ -43,30 +43,30 @@
 
 }
 
-.container_portfolio .carousel_portfolio .item_portfolio .info_portfolio span {
+.container_catalogo .carousel_catalogo .item_catalogo .info_catalogo span {
     display: block;
     color: white;
     padding: 5px;
     border-radius: 10px;
 }
 
-.container_portfolio .carousel_portfolio .item_portfolio .name_portfolio {
+.container_catalogo .carousel_catalogo .item_catalogo .name_catalogo {
     font-size: 45px;
 
 }
 
-.container_portfolio .carousel_portfolio .item_portfolio .description {
+.container_catalogo .carousel_catalogo .item_catalogo .description {
     margin-top: 5px;
     font-size: 18px;
     text-align: justify;
     flex-grow: 1;
 }
 
-.container_portfolio .buttons_portfolio {
+.container_catalogo .buttons_catalogo {
     text-align: center;
 }
 
-.container_portfolio .buttons_portfolio button {
+.container_catalogo .buttons_catalogo button {
     background-color: transparent;
     border: none;
     cursor: pointer;

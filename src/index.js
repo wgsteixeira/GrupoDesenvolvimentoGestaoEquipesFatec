@@ -6,14 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 import Navbar from './layout/Navbar';
 import HelpDesk from './pages/HelpDesk';
-import Portfolio from './pages/Portfolio';
+import Catalogo from './pages/Catalogo';
 import Home from './pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar /> 
     <Home />
-    <Portfolio />   
+    <Catalogo />   
     <HelpDesk />
     <Footer />
   </React.StrictMode>,
