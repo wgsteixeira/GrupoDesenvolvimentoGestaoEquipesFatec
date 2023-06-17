@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import Footer from './layout/Footer';
 import reportWebVitals from './reportWebVitals';
@@ -9,15 +9,15 @@ import HelpDesk from './pages/HelpDesk';
 import Catalogo from './pages/Catalogo';
 import Home from './pages/Home';
 
-ReactDOM.render(
+
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar /> 
+    <Navbar />
     <Home />
-    <Catalogo />   
+    <Catalogo />
     <HelpDesk />
     <Footer />
   </React.StrictMode>,
-  document.getElementById('root')
 );
 
 reportWebVitals(sendToVercelAnalytics);
