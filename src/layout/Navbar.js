@@ -18,16 +18,16 @@ const Navbar = () => {
         console.log("success");
     };
     return (
-        <header class="navbar">
-            <div class=" navbar-header">
-                <img class="logo-image" src={logo} alt="imagem" />
+        <header className="navbar">
+            <div className=" navbar-header">
+                <img className="logo-image" src={logo} alt="imagem" />
             </div>
-            <div class=" navbar-menu">
-                <a class="item-nav home-button" href="#home">Home</a>
-                <a class="item-nav catalogo-button" href="#catalogo">Catálogo de Serviços</a>
-                <a class="item-nav helpdesk-button" href="#helpdesk">Help Desk</a>
+            <div className=" navbar-menu">
+                <a className="item-nav home-button" href="#home">Home</a>
+                <a className="item-nav catalogo-button" href="#catalogo">Catálogo de Serviços</a>
+                <a className="item-nav helpdesk-button" href="#helpdesk">Help Desk</a>
             </div>
-            <div class=" navbar-direita"><button id="login-button" class="login-button" onClick={() => setShowModal(true)}>Login</button></div>
+            <div className=" navbar-direita"><button id="login-button" className="login-button" onClick={() => setShowModal(true)}>Login</button></div>
             <Modal className="modal"
                 show={showModal}
                 onHide={handleClose}

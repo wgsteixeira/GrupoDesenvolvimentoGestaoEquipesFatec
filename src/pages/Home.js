@@ -6,7 +6,7 @@ function Home() {
     return (
         <div id='home' className='container'>
             <div className='aside'>
-                <div class="hexagono">
+                <div className="hexagono">
                     <img className='logo_brand' src={logo_brand} alt="imagem"/>
                 </div>
                 <div className='slogan'>"ACCURATE AND FAST"</div>
@@ -14,7 +14,7 @@ function Home() {
             </div>
                     
             <div>
-                <div class="mapa">
+                <div className="mapa">
                     <img className='map_img' src={map} alt="imagem do canto"/>
                 </div>
                 <h2>TOTAL EXPRESS</h2>

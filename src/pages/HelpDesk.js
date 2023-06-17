@@ -9,7 +9,7 @@ import icon_loupe from '../img/icon_loupe.png'
 function HelpDesk() {
     return (
         <div className='container' id='helpdesk'>
-            <div class='sb-box-container'>
+            <div className='sb-box-container'>
                 <img src={desktop} />
                 <div className='text_container'>
                     <p className='title'>ENTRE EM CONTATO</p>
@@ -19,8 +19,8 @@ function HelpDesk() {
                 </div>
             </div>
 
-            <div class="helpdesk-container">
-                <div class="search-container">
+            <div className="helpdesk-container">
+                <div className="search-container">
                     <span className='title_component'>Help desk</span>
                     <span className='text_component'>Bem vindo a central de ajuda</span>
                     <div className='search_box'>
@@ -29,12 +29,12 @@ function HelpDesk() {
                     </div>
                 </div>
 
-                <div class="box-container-container">
-                    <div class='box-container'>
+                <div className="box-container-container">
+                    <div className='box-container'>
                         <img src={baloon} />
                         <div className='text-div'>Forum de Duvidas</div>
                     </div>
-                    <div class='box-container'>
+                    <div className='box-container'>
                         <img src={call_center} />
                         <div className='text-div'>Suporte</div>
                     </div>
