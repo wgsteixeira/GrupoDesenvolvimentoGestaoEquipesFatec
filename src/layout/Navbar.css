@@ -1,9 +1,4 @@
-html,
-body {
-    scroll-behavior: smooth;
-}
-
-.navbar {
+.nav_navbar {
     width: 100%;
     height: 50px;
     top: 0;
@@ -18,26 +13,26 @@ body {
 }
 
 /* NAVBAR HEADER / LOGO*/
-.navbar-header {
+.nav_navbar-header {
     width: 15%;
 }
 
-.logo-image {
+.nav_logo-image {
     max-width: 40px;
     margin: 5px;
     margin-left: 30px;
 }
 
 /* NAVBAR MENU */
-.navbar-menu {
+.nav_navbar-menu {
     width: 75%;
     display: flex;
     justify-content: center;
     align-self: stretch;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;    
 }
 
-.item-nav {
+.nav_item-nav {
     position: relative;
     width: 100%;
     height: 50px;
@@ -50,24 +45,24 @@ body {
     color: white;
 }
 
-.home-button:hover {
+.nav_home-button:hover {
     background: linear-gradient(90deg, #895cfd, #5ce0e6);
     color: white;
 }
 
-.catalogo-button:hover {
+.nav_catalogo-button:hover {
     background: linear-gradient(90deg, #5ce0e6, #014bac);
     color: white;
 }
 
-.helpdesk-button:hover {
+.nav_helpdesk-button:hover {
     background: linear-gradient(90deg, #014bac, #1970df);
     color: white;
 }
 
 
 /* NAVBAR LOGIN BUTTON*/
-.navbar-direita {
+.nav_navbar-direita {
     display: flex;
     justify-content: flex-end;
     width: 15%;
@@ -76,7 +71,7 @@ body {
     padding-right: 20px;
 }
 
-.login-button {
+.nav_login-button {
     border: none;
     color: white;
     border-radius: 9px;
@@ -89,7 +84,7 @@ body {
 /* modals*/
 
 
-.modal {
+.nav_modal {
     position: fixed;
     width: 400px;
     z-index: 1040;
@@ -101,7 +96,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.backdrop {
+.nav_backdrop {
     position: fixed;
     z-index: 1040;
     top: 0;
@@ -112,24 +107,24 @@ body {
     opacity: 0.5;
 }
 
-.modal-title {
+.nav_modal-title {
     font-weight: 500;
     font-size: 1.25rem;
 }
 
-.modal-header {
+.nav_modal-header {
     border-bottom: 1px solid #e9ecef;
     display: flex;
     justify-content: space-between;
 }
 
-.modal-desc,
-.modal-header,
-.modal-footer {
+.nav_modal-desc,
+.nav_modal-header,
+.nav_modal-footer {
     padding: 12px;
 }
 
-.close-button {
+.nav_close-button {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
@@ -140,7 +135,7 @@ body {
     cursor: pointer;
 }
 
-button {
+.nav_button {
     cursor: pointer;
     font-size: 1rem;
     padding: 10px 12px;
@@ -148,24 +143,24 @@ button {
     border: none;
 }
 
-.modal-footer {
+.nav_modal-footer {
     border-top: 1px solid #e9ecef;
     display: flex;
     justify-content: flex-end;
     gap: 8px;
 }
 
-.secondary-button {
+.nav_secondary-button {
     color: #fff;
     background-color: #6c757d;
 }
 
-.primary-button {
+.nav_primary-button {
     color: #fff;
     background-color: #007bff;
 }
 
-.modal-example {
+.nav_modal-example {
     height: 100vh;
     display: flex;
     justify-content: center;

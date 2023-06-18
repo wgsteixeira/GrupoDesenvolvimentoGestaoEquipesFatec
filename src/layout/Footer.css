@@ -1,5 +1,5 @@
 
-.footer {
+.footer_container {
     background-color: #0d3a5c;    
     display: flex;
     flex-direction: column;   
@@ -7,16 +7,16 @@
     height: 100%
   }
   
-  .row {
+  .footer_row {
     display: flex;
     flex-wrap: wrap;    
   }
   
-  .column {
+  .footer_column {
     flex: 33.33%;
   }
   
-  .title {
+  .footer_title {
     font-size: 20px;
     color: white;  
     margin-top: 15px;
@@ -24,19 +24,19 @@
     text-align: center;
   }
   
-  .list_itens {
+  .footer_list_itens {
     color: white;  
     list-style: none;    
     padding: 0;
     text-align: center;
   }
   
-  .list_itens li {
+  .footer_list_itens li {
     margin-bottom: 10px;
           
   }
   
-  .list_itens a {
+  .footer_list_itens a {
     color: white;
     display: inline-block;
     margin-right: 10px;      
@@ -44,7 +44,7 @@
   }
   
   @media (max-width: 767px) {
-    .column {
+    .footer_column {
       flex: 100%;
     }
   }

@@ -1,40 +1,44 @@
-.container_catalogo {
-    max-width: 720px;
-    display: block;
-    margin-left: 25%;
-    
+.catalogo_container {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-.container_catalogo .carousel_catalogo {
+.catalogo_container_card {
+    max-width: 100%;
+    margin-left: 140%;
+}
+
+.catalogo_container .catalogo_carousel {
     display: flex;
     overflow-x: auto;
-    align-items: center;
-    scroll-behavior: smooth;
     max-width: 100%;
 }
 
-.container_catalogo .carousel_catalogo::-webkit-scrollbar {
-    display: flex;    
+.catalogo_container .catalogo_carousel::-webkit-scrollbar {
+    display: flex;
 }
 
-.container_catalogo .carousel_catalogo .item_catalogo {
+.catalogo_container .catalogo_carousel .catalogo_item {
     margin: 10px;
     padding: 10px;
-    width: 700px;
+    width: 780px;
     height: 450px;
     flex: none;
     background-color: #4984ae;
     border-radius: 30px;
-
 }
 
-.container_catalogo .carousel_catalogo .item_catalogo .image_catalogo img {
+
+.catalogo_container .catalogo_carousel .catalogo_item .catalogo_image img {
     width: 80px;
     object-fit: cover;
     margin: 20px;
 }
 
-.container_catalogo .carousel_catalogo .item_catalogo .info_catalogo {
+.catalogo_container .catalogo_carousel .catalogo_item .catalogo_info {
     height: 140px;
     display: flex;
     flex-direction: column;
@@ -43,31 +47,40 @@
 
 }
 
-.container_catalogo .carousel_catalogo .item_catalogo .info_catalogo span {
+.catalogo_container .catalogo_carousel .catalogo_item .catalogo_info span {
     display: block;
     color: white;
     padding: 5px;
     border-radius: 10px;
 }
 
-.container_catalogo .carousel_catalogo .item_catalogo .name_catalogo {
+.catalogo_container .catalogo_carousel .catalogo_item .catalogo_info .catalogo_name {
     font-size: 45px;
 
 }
 
-.container_catalogo .carousel_catalogo .item_catalogo .description {
+.catalogo_container .catalogo_carousel .catalogo_item .catalogo_description {
     margin-top: 5px;
     font-size: 18px;
     text-align: justify;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
-.container_catalogo .buttons_catalogo {
+.catalogo_container .catalogo_buttons {
     text-align: center;
+
 }
 
-.container_catalogo .buttons_catalogo button {
+.catalogo_container .catalogo_buttons button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.catalogo_title {
+    font-family: 'Norwester', sans-serif;
+    font-size: 50px;
+    display: flex;
+    margin-left: -300px;
+    margin-bottom: 30px;
 }

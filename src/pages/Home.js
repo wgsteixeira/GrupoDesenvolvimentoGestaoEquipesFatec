@@ -4,25 +4,25 @@ import map from '../img/map.png'
 
 function Home() {
     return (
-        <div id='home' className='container'>
-            <div className='aside'>
-                <div className="hexagono">
-                    <img className='logo_brand' src={logo_brand} alt="imagem"/>
+        <div id='home' className='home_container'>
+            <div className='home_aside'>
+                <div className="home_hexagono">
+                    <img className='home_logo_brand' src={logo_brand} alt="imagem" />
                 </div>
-                <div className='slogan'>"ACCURATE AND FAST"</div>
-                <div className='name'>TOTAL EXPRESS</div>
+                <div className='home_slogan'>"ACCURATE AND FAST"</div>
+                <div className='home_name'>TOTAL EXPRESS</div>
             </div>
-                    
+
             <div>
-                <div className="mapa">
-                    <img className='map_img' src={map} alt="imagem do canto"/>
+                <div className="home_mapa">
+                    <img className='home_map_img' src={map} alt="imagem do canto" />
                 </div>
-                <h2>TOTAL EXPRESS</h2>
-                <h3>QUEM SOMOS?</h3>
-                <div className='text'>
+                <div className='home_title'>TOTAL EXPRESS </div>
+                <div className='home_about'>QUEM SOMOS?</div>
+                <div className='home_text'>
                     A EMPRESA TOTAL EXPRESS NASCEU EM PRESIDENTE PRUDENTE - SP EM 2019. BUSCAMOS SEMPRE PENSAR A FRENTE, OFERECENDO INOVAÇÃO NO CENÁRIO LOGÍSTICO,
                     PROPORCIONANDO ATENDIDO E QUALIDADE EM TODAS NOSSAS OPERAÇÕES, TEMOS COMO NOSSA MISSÃO, ENTREGAR O MELHOR NO QUE DIZ RESPEITO A
-                    ARMAZENAMENTO E CONTROLE LOGÍSTICO, NO MENOR  PRAZO E COM O MENOR CUSTO POSSÍVEL, GARANTINDO ASSIM EXCELÊNCIA DAS NOSSAS OPERAÇÕES. 
+                    ARMAZENAMENTO E CONTROLE LOGÍSTICO, NO MENOR  PRAZO E COM O MENOR CUSTO POSSÍVEL, GARANTINDO ASSIM EXCELÊNCIA DAS NOSSAS OPERAÇÕES.
                 </div>
             </div>
         </div>

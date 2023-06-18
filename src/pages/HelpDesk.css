@@ -1,32 +1,18 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 50%;
-}
-
-.helpdesk-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
-}
-
-.container {
+.helpdesk_container {
     display: flex;
     justify-content: center;
-    height: 100vh;
-    width: 80%;
-    margin-bottom: 2.9%;
+    height: 83vh;
+    width: 80%;  
+    
 }
 
-.search-container {
+.helpdesk_search {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.search_box{
+.helpdesk_search_box{
     background-color: white;    
     width: 1100px;
     height: 35px;
@@ -35,7 +21,7 @@
     display:flex;
     justify-content: space-between;        
 }
-.search_box input{
+.helpdesk_search_box input{
     text-align: center;
     background: none;
     border: 0;
@@ -44,20 +30,20 @@
     width: 1100px;
     height: 20px;
 }
-.search_box img{
+.helpdesk_search_box img{
     height: 20px;  
     cursor: pointer;
     margin: 0;
 }
 
-.box-container-container {
+.helpdesk_box_container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 20px;    
 }
 
-.box-container {
+.helpdesk_box_container_second {
     margin: 20px;
     width: 1100px;
     height: 180px;
@@ -68,34 +54,34 @@
     cursor: pointer;
 }
 
-.box-container img{
+.helpdesk_box_container_second img{
     display: flex;
     max-width: 80px;
     align-items: center;
     margin-top: 20px;
 }
 
-.text-div {    
+.helpdesk_text_container {    
     margin-top: -45px;
     text-align: center;
     color: white;
 }
 
-.sb-box-container {    
+.helpdesk_sb_box {    
     margin-top: 40%;
     margin-left: 45px;
 }
 
-.sb-box-container img {   
+.helpdesk_sb_box img {   
     max-width: 30%;
     margin-left: 30px;
 }
 
-.text_container {
+.helpdesk_text {
     margin: 5px;
 }
 
-.text_container .title {
+.helpdesk_text .helpdesk_title {
     color: black;
     font-weight: bold;
     margin: 5px;
@@ -103,11 +89,11 @@
     margin-left: 30px;
 }
 
-.text_container .bold {
+.helpdesk_text .helpdesk_bold {
     font-weight: bold;
 }
 
-.sb-box-container p {
+.helpdesk_sb_box p {
     margin: 0;
     margin-left: 5px;
     text-align: left;
@@ -115,13 +101,13 @@
     margin-left: 30px;
 }
 
-.title_component{
+.helpdesk_title_second{
     font-size: 90px;
     font-family: Dm Sans;    
     color: black;
 }
 
-.text_component{
+.helpdesk_text_second{
     margin: 5px 890px 8px 0px;
     font-size: 16px;
 }

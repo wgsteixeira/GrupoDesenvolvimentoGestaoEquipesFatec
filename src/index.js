@@ -1,13 +1,14 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import Footer from './layout/Footer';
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 import Navbar from './layout/Navbar';
-import HelpDesk from './pages/HelpDesk';
-import Catalogo from './pages/Catalogo';
 import Home from './pages/Home';
+import Catalogo from './pages/Catalogo';
+import HelpDesk from './pages/HelpDesk';
+import Footer from './layout/Footer';
+
 
 
 createRoot(document.getElementById('root')).render(

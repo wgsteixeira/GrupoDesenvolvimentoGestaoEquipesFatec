@@ -10,38 +10,38 @@ const Navbar = () => {
     const [showModal, setShowModal] = useState(false);
 
     // Backdrop JSX code
-    const renderBackdrop = (props) => <div className="backdrop" {...props} />;
+    const renderBackdrop = (props) => <div className="nav_backdrop" {...props} />;
 
     var handleClose = () => setShowModal(false);
 
-    var handleSuccess = () => {
-        console.log("success");
-    };
+    // var handleSuccess = () => {
+    //     console.log("success");
+    // };
     return (
-        <header className="navbar">
-            <div className=" navbar-header">
-                <img className="logo-image" src={logo} alt="imagem" />
+        <header className="nav_navbar">
+            <div className="nav_navbar-header">
+                <img className="nav_logo-image" src={logo} alt="imagem" />
             </div>
-            <div className=" navbar-menu">
-                <a className="item-nav home-button" href="#home">Home</a>
-                <a className="item-nav catalogo-button" href="#catalogo">Catálogo de Serviços</a>
-                <a className="item-nav helpdesk-button" href="#helpdesk">Help Desk</a>
+            <div className="nav_navbar-menu">
+                <a className="nav_item-nav nav_home-button" href="#home">Home</a>
+                <a className="nav_item-nav nav_catalogo-button" href="#catalogo">Catálogo de Serviços</a>
+                <a className="nav_item-nav nav_helpdesk-button" href="#helpdesk">Help Desk</a>
             </div>
-            <div className=" navbar-direita"><button id="login-button" className="login-button" onClick={() => setShowModal(true)}>Login</button></div>
-            <Modal className="modal"
+            <div className="nav_navbar-direita"><button id="login-button" className="nav_login-button" onClick={() => setShowModal(true)}>Login</button></div>
+            <Modal className="nav_modal"
                 show={showModal}
                 onHide={handleClose}
                 renderBackdrop={renderBackdrop}>
                 <div>
-                    <div className="modal-header">
-                        <div className="modal-title">LOGIN DO USUÁRIO</div>
+                    <div className="nav_modal-header">
+                        <div className="nav_modal-title">LOGIN DO USUÁRIO</div>
                         <div>
-                            <span className="close-button" onClick={handleClose}>
+                            <span className="nav_close-button" onClick={handleClose}>
                                 x
                             </span>
                         </div>
                     </div>
-                    <div className="modal-desc">
+                    <div className="nav_modal-desc">
                         <form>
                             <label for="email">E-mail</label><br></br>
                             <input type="text" placeholder='Digite o E-mail'></input><br></br>
@@ -50,8 +50,8 @@ const Navbar = () => {
                             <input type="submit" value="Login"></input><br></br>
                             <input type="button" onClick={handleClose} value="Cancelar"></input><br></br>
                             <p><input type="checkbox"></input>Lembrar Senha</p>
-                            <a href="#">Esqueceu a senha?</a><br></br>
-                            <p>Não está registrado? <a href="#">Registrar</a></p>
+                            <a href="/">Esqueceu a senha?</a><br></br>
+                            <p>Não está registrado? <a href="/">Registrar</a></p>
                         </form>
                     </div>
                 </div>
