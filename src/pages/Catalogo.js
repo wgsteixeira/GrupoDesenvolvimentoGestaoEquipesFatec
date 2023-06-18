@@ -13,21 +13,19 @@ import calendar from '../img/calendar.png'
 
 
 function Catalogo() {
-
+    
     const carousel = useRef(null);
 
-    const hadleLeftClick = (e) => {
-        e.preventDefault();
-        console.log(carousel.current.offsetWidth);
-        carousel.current.scrollLeft -= carousel.current
-    }
-
-    const hadleRightClick = (e) => {
-        e.preventDefault();
-        console.log(carousel.current.offsetWidth);
-        carousel.current.scrollLeft += carousel.current.offsetWidth;
-    }
-
+    const handleLeftClick = (e) => {
+      e.preventDefault();
+      carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    };
+    
+    const handleRightClick = (e) => {
+      e.preventDefault();
+      carousel.current.scrollLeft += carousel.current.offsetWidth;
+    };
+    
     return (
         <div className='catalogo_container' id="catalogo">
 
@@ -117,8 +115,8 @@ function Catalogo() {
 
                 </div>
                 <div className='catalogo_buttons'>
-                    <button onClick={hadleLeftClick}><img src={arrow_left} alt='Scroll Left' /></button>
-                    <button onClick={hadleRightClick}><img src={arrow_right} alt='Scroll Right' /></button>
+                    <button onClick={handleLeftClick}><img src={arrow_left} alt='Scroll Left' /></button>
+                    <button onClick={handleRightClick}><img src={arrow_right} alt='Scroll Right' /></button>
                 </div>
             </div>
         </div>
