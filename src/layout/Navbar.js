@@ -7,16 +7,15 @@ import { Modal } from 'react-overlays';
 
 const Navbar = () => {
     // React state to control Modal visibility
-    const [showModal, setShowModal] = useState(false);
+    const [showModalLogin, setShowModalLogin] = useState(false);
+    const [showModalRegistro, setShowModalRegistro] = useState(false);
 
     // Backdrop JSX code
     const renderBackdrop = (props) => <div className="nav_backdrop" {...props} />;
 
-    var handleClose = () => setShowModal(false);
+    var handleCloseLogin = () => setShowModalLogin(false);
+    var handleCloseRegistro = () => setShowModalRegistro(false);
 
-    // var handleSuccess = () => {
-    //     console.log("success");
-    // };
     return (
         <header className="nav_navbar">
             <div className="nav_navbar-header">
@@ -27,37 +26,83 @@ const Navbar = () => {
                 <a className="nav_item-nav nav_catalogo-button" href="#catalogo">Catálogo de Serviços</a>
                 <a className="nav_item-nav nav_helpdesk-button" href="#helpdesk">Help Desk</a>
             </div>
-            <div className="nav_navbar-direita"><button id="login-button" className="nav_login-button" onClick={() => setShowModal(true)}>Login</button></div>
+            <div className="nav_navbar-direita"><button id="login-button" className="nav_login-button" onClick={() => setShowModalLogin(true)}>Login</button></div>
+
+
             <Modal className="nav_modal"
-                show={showModal}
-                onHide={handleClose}
+                show={showModalLogin}
+                onHide={handleCloseLogin}
                 renderBackdrop={renderBackdrop}>
                 <div>
                     <div className="nav_modal-header">
                         <div className="nav_modal-title">LOGIN DO USUÁRIO</div>
-                        <div>
-                            <span className="nav_close-button" onClick={handleClose}>
-                                x
-                            </span>
-                        </div>
                     </div>
                     <div className="nav_modal-desc">
                         <form>
-                            <label for="email">E-mail</label><br></br>
-                            <input type="text" placeholder='Digite o E-mail'></input><br></br>
-                            <label for="senha">Senha</label><br></br>
-                            <input type="text" placeholder='Digite a Senha'></input><br></br>
-                            <input type="submit" value="Login"></input><br></br>
-                            <input type="button" onClick={handleClose} value="Cancelar"></input><br></br>
-                            <p><input type="checkbox"></input>Lembrar Senha</p>
-                            <a href="/">Esqueceu a senha?</a><br></br>
-                            <p>Não está registrado? <a href="/">Registrar</a></p>
+                            <div className="nav_modal-item">E-mail<br></br>
+                                <input className="nav_modal-input" type="text" placeholder='Digite E-mail' />
+                            </div>
+                            <div className="nav_modal-item">Senha<br></br>
+                                <input className="nav_modal-input" type="text" placeholder='Digite a Senha' /><br></br>
+                            </div>
+
+                            <div className='nav_modal-buttons'>
+                                <input className="nav_modal-loginbutton" type="submit" value="Login" /><br></br>
+                                <input className='nav_modal-cancelbutton' type="button" onClick={handleCloseLogin} value="Cancelar"></input>
+                            </div>
+
+
+                            <div className='nav_modal-bottom'>
+                                <span>
+                                    <input type="checkbox" />Lembrar Senha
+                                </span>
+                                <a href="/">Esqueceu a senha?</a><br></br>
+                            </div>
+                            <div className='nav_modal-footer'>
+                                <span>Não está registrado? <span className='nav_modal-registro' onClick={() => setShowModalRegistro(true)}>Registrar</span></span>
+                            </div>
                         </form>
                     </div>
                 </div>
             </Modal>
+
+            <Modal className="nav_modal"
+                show={showModalRegistro}
+                onHide={handleCloseRegistro}
+                renderBackdrop={renderBackdrop}>
+                <div>
+                    <div className="nav_modal-header">
+                        <div className="nav_modal-title">LOGIN DO USUÁRIO</div>
+                    </div>
+                    <div className="nav_modal-desc">
+                        <form>
+                            <div className="nav_modal-item">Nome<br></br>
+                                <input className="nav_modal-input" type="text" placeholder='Digite o nome' />
+                            </div>
+                            <div className="nav_modal-item">E-mail<br></br>
+                                <input className="nav_modal-input" type="text" placeholder='Digite E-mail' />
+                            </div>
+                            <div className="nav_modal-item">Senha<br></br>
+                                <input className="nav_modal-input" type="text" placeholder='Digite a senha' /><br></br>
+                            </div>
+                            <div className="nav_modal-item">Confiarmar Senha<br></br>
+                                <input className="nav_modal-input" type="text" placeholder='Digite a senha' /><br></br>
+                            </div>
+                            <div className="nav_modal-item">Departamento<br></br>
+                                <input className="nav_modal-input" type="text" placeholder='Digite o Departamento' /><br></br>
+                            </div>
+                            <div className='nav_modal-buttons'>
+                                <input className="nav_modal-loginbutton" type="submit" value="Registrar" /><br></br>
+                                <input className='nav_modal-cancelbutton' type="button" onClick={handleCloseRegistro} value="Cancelar"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </Modal>
+
         </header>
     );
 }
 
 export default Navbar;
+
