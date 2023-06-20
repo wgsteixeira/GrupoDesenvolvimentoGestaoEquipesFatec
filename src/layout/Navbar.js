@@ -72,7 +72,7 @@ const Navbar = () => {
                 renderBackdrop={renderBackdrop}>
                 <div>
                     <div className="nav_modal-header">
-                        <div className="nav_modal-title">LOGIN DO USUÁRIO</div>
+                        <div className="nav_modal-title">REGISTRAR USUÁRIO</div>
                     </div>
                     <div className="nav_modal-desc">
                         <form>
