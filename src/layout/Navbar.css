@@ -89,10 +89,11 @@
     width: 400px;
     z-index: 1040;
     top: 30%;
-    left: 30%;
-    background-color: white;
+    left: 40%;
+    background-color: #4984ae;
+    color: black;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
+    border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -113,9 +114,9 @@
 }
 
 .nav_modal-header {
-    border-bottom: 1px solid #e9ecef;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    color: white;
 }
 
 .nav_modal-desc,
@@ -124,13 +125,41 @@
     padding: 12px;
 }
 
+.nav_modal-desc {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_modal-item {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.nav_modal-input {
+    border: none;
+    color: #bfbfbf;
+    border-radius: 50px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 23px;
+}
+
+.nav_modal-bottom {
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .nav_close-button {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
     color: #000;
     border: none;
-    background-color: white;
+    background-color: transparent;
     opacity: 0.7;
     cursor: pointer;
 }
@@ -144,11 +173,42 @@
 }
 
 .nav_modal-footer {
-    border-top: 1px solid #e9ecef;
     display: flex;
-    justify-content: flex-end;
-    gap: 8px;
+    justify-content: center;
 }
+
+.nav_modal-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav_modal-loginbutton {
+    border: none;
+    color: white;
+    border-radius: 9px;
+    height: 40px;
+    width: 150px;
+    margin: 10px;
+    background: linear-gradient(90deg, #5cdfe5, #014cae);
+}
+
+.nav_modal-cancelbutton {
+    border: none;
+    color: white;
+    border-radius: 9px;
+    height: 40px;
+    width: 150px;
+    margin: 10px;
+    background: #2a5d82;
+}
+
+.nav_modal-registro {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 
 .nav_secondary-button {
     color: #fff;
